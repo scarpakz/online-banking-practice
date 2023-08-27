@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #2C2C54;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGIN PAGE */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-content {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: #1c1c3d;
+    border-radius: 10px;
+}
+.login-content h1 {
+    margin: 20px 0;
+    color: #fff;
+}
+.login-form form {
+    padding-bottom: 30px;
+}
+.login-group {
+    padding: 10px 40px;
+}
+.login-group input{
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: unset;
+}
+.login-btn {
+    background-color: #f0f429;
+    border: unset;
+    width: 150px !important;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+/* Add Customer */
+
+.add-cust-container {
+    color: #fff;
+    padding: 40px 60px;
+}
+.add-cust-header {
+    display: flex;
+}
+.add-cust-header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+.fl-1 {
+    display: flex;
+    flex: 1;
+}
+.fl-1:last-child {
+    justify-content: end;
+}
+.m-lg {
+    margin: 40px 0;
+}
+.text-white {
+    color: #fff;
+    border: unset;
+    background-color: #E23B3B;
+    padding: 13px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.add-cust-form-group {
+    width: 350px;
+}
+.add-cust-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 15px 20px;
+    border: unset;
+}
+.d-flex {
+    display: flex;
+}
+.save-entry {
+    background-color: #f0f429;
+    border: unset;
+    width: 150px !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.generate-pin {
+    background-color: #000;
+    border: unset;
+    color: #fff;
+}
+#PIN_ID {
+    color: #fff;
+}
+
+/* Employee Dashboard */
+.employee-dasboard{
+    height: 100vh;
+}
+.employee-dash-header{
+    display: flex;
+    color: #fff;
+    padding: 40px 60px;
+}
+.employee-dash-header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+.employee-dash-first-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+.add-cust-select a{
+    background-color: #f0f429;
+    padding: 90px 45px;
+    border-radius: 20px;
+    color: #414141;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+.view-cust-select a{
+    background-color: #82f429;
+    padding: 90px 45px;
+    border-radius: 20px;
+    color: #414141;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* View Balance */
+
+.view-balance-container{
+    color: #fff;
+    padding: 40px 60px;
+}
+.view-balance-header{
+    display: flex;
+}
+.view-balance-header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+.vb-1 {
+    display: flex;
+    flex: 1;
+}
+.vb-1:last-child {
+    justify-content: space-between;
+}
+.chnge-pin{
+    padding-left: 45%;
+}
+.balances{
+    padding: 30px 0px;
+}
+.cheque-balance, .regular-balance{
+    font-size: 25px;
+    font-weight: 600;
+    align-items: center;
+    padding: 20px 0px;
+}
+.balance{
+    padding-left: 40px;
+    font-weight: 100;
+}
+
+/* Customer Dashboard */
+
+.cust-dash-container{
+    color: #fff;
+    padding: 40px 60px;
+}
+.cust-dash-header{
+    display: flex;
+}
+.cust-dash-header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+.cust-dash-first-container h1{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 100px;
+    font-size: 50px;
+}
+.cust-dash-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.select-btn {
+    padding: 30px 65px;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #1f1f42;
+}
+.select-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Virtual Amount */
+.virtual-header-container{
+    padding: 30px;
+}
+.virtual-displaying-set{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+#link-container{
+    flex: 1;
+}
+.virtual-container{
+    padding: 0px 30px;
+    
+}
+#link-btn{
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.card-box{
+    padding: 7vh 67vh;
+}
+.color-background{
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 0px;
+    height: 40vh;
+    line-height: 10vh;
+}
+.div-validity{
+    display: flex;
+    justify-content: space-between;
+}
+.div-box{
+    display: flex;
+    justify-content: space-between;
+}
+.adjustment-container{
+    margin-top: 30px;
+    line-height: 16vh;
+    padding: 20px;
+    color: rgb(153 153 153);
+}
+#banking-text{
+    color: rgb(153 153 153);
+    font-size: 40px;
+}
+.lining-height{
+    line-height: 18px;
+}
+.text-atm{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+}
+
+/* Withdraw */ 
+/* Create two withdrawal page.
+TODO: @LOUIE
+Regular Account Withdrawal
+Cheque Withdrawal
+*/
+.format-container{
+    text-align: center;
+    line-height: 13vh;
+}
+#font-sizing{
+    font-size: 60px;
+}
+#input-type{
+    font-size:  25px;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 10px;
+}
+#submitted-btn{
+    font-size:  19px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 10px ;
+    background-color: rgb(130 244 41);
+}
+.font-lane-container{
+    justify-content: space-between;;
+}
+.divide-container{
+    padding: 50px;
+}
+
+/* Deposit Cheque */
+
+.deposit-cheq-container h1{
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 60px;
+}
+.deposit-cheq-content{
+    display: grid;
+    place-items: center;
+}
+.deposit-cheq-btn, .input-cheq-amount{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+.input-cheq-amount input{
+    padding: 20px;
+    width: 25%;
+    border-radius: 15px;
+    border-style: none;
+    font-weight: 600;
+}
+.deposit-cheq-btn button{
+    padding: 15px;
+    background-color: #cd0666;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+/* Deposit Regular */
+
+.deposit-regular-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+.cash-regular-select a{
+    background-color: #f0f429;
+    padding: 60px 45px;
+    border-radius: 20px;
+    color: #414141;
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 600;
+}
+.cheque-regular-select a{
+    background-color: #82f429;
+    padding: 60px 45px;
+    border-radius: 20px;
+    color: #414141;
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+/* View Customers */
+
+.view-cust-container {
+    color: #fff;
+    padding: 40px 60px;
+}
+.view-cust-header {
+    display: flex;
+}
+.view-cust-header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+.view-cust-headline {
+    margin: 0 250px 0px 250px;
+}
+.view-cust-headline ul{
+    display: flex;
+    padding: 25px 10px;
+    background-color: #f0f429;
+    justify-content: space-around;
+    text-align: center;
+}
+.view-cust-headline ul li {
+    list-style: none;
+    color: #000;
+    font-size: 20px;
+    flex: 1;
+    font-weight: 600;
+}
+.view-cust-data {
+    margin: 0 250px 0px 250px;
+}
+.view-cust-data ul{
+    display: flex;
+    padding: 25px 10px;
+    background-color: #fff;
+    justify-content: space-around;
+    text-align: center;
+}
+.view-cust-data ul li {
+    list-style: none;
+    color: #000;
+    font-size: 20px;
+    flex: 1;
+    font-weight: 600;
+}
