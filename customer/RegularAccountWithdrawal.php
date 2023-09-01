@@ -11,17 +11,17 @@
         <button class="m-lg text-white">< Back</button>
 
     <div class="format-container">
-        <form action="">
+        <form action="../controllers/DepositAmount.php">
             <div>
                 <h1 id="font-sizing">
                     Regular Account Withdrawal
                 </h1>
             </div>
             <div>
-                <input type="text" name="" id="input-type" placeholder="Enter amount">
+                <input type="text" name="dep_amnt" id="input-type" placeholder="Enter amount">
             </div>
             <div>
-                <input type="submit" value="submit" id="submitted-btn">
+                <input type="submit" name="sbmt-dep-amnt" value="submit" id="submitted-btn">
             </div>    
         </form>
     </div>
