@@ -19,14 +19,14 @@
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500"
     >
-        <form action="../controllers/DepositAmount.php">
+        <form action="../controllers/DepositAmount.php" method="post">
             <div>
                 <h1 id="font-sizing">
                     Regular Account Withdrawal
                 </h1>
             </div>
             <div>
-                <input type="text" name="dep_amnt" id="input-type" placeholder="Enter amount">
+                <input type="number" min="0" name="dep_amnt" id="input-type" placeholder="Enter amount">
             </div>
             <div>
                 <input type="submit" name="sbmt-dep-amnt" value="submit" id="submitted-btn">
