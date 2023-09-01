@@ -4,14 +4,22 @@
     $excute = mysqli_query($db,$sql);
 ?>
 <div class="view-cust-container">
-    <div class="view-cust-header">
+    <div class="view-cust-header"
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    >
         <h1 class="fl-1">View Customers</h1>
         <a class="fl-1" href="../logout.php"> Sign Out</a>
     </div>
     <div class="back-btn">
         <a href="DashboardEmployee.php" class="m-lg text-white">< Back</a>
     </div>
-    <div class="view-cust-display-container">
+    <div class="view-cust-display-container"
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+    >
         <div class="view-cust-headline">
             <ul>
                 <li>ID</li>

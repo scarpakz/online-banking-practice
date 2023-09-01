@@ -1,6 +1,10 @@
 <?php include "../constant/header.php"?>
     <div class="virtual-header-container">   
-        <div class="virtual-displaying-set">
+        <div class="virtual-displaying-set"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+        >
             <div>
                 <h1>Welcome, cust123!</h1>
             </div>
@@ -12,9 +16,13 @@
         
         <button class="m-lg text-white">< Back</button>
         <div>
-            <h1 class="text-atm">My Virtual ATM card</h1>
+            <h1 class="text-atm" data-aos="fade-up">My Virtual ATM card</h1>
         </div>
-        <div class="card-box">
+        <div class="card-box" 
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        >
             <div class="color-background">
                 <div>
                     <h1 id="banking-text">Banking Online, Ph</h1>

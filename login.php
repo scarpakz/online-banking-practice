@@ -5,10 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Log In</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="login-container">
+        <div class="login-container"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        >
             <div class="login-content">
                 <h1>Sign In</h1>
                 <div class="login-form">
@@ -26,5 +31,9 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
