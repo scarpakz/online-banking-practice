@@ -1,4 +1,8 @@
 <?php include "../constant/header.php"?>
+<?php
+    $psql = "SELECT * FROM user";
+    $pexcute = mysqli_query($db,$psql);
+?>
     <div class="virtual-header-container">   
         <div class="virtual-displaying-set"
             data-aos="fade-right"
@@ -9,7 +13,9 @@
                 <h1>Welcome, cust123!</h1>
             </div>
             <div class="virtual-container">
-                <a href="" id="link-btn">Change PIN</a>
+            <?php if($chge_data = mysqli_fetch_array($pexcute)){ ?>
+                <a href="../customer/ChangePIN.php?chnge_pin=<?php echo $chge_data['id']; ?>" id="link-btn">Change PIN</a>
+            <?php }?>
                 <a href="" id="link-btn">Sign Out</a>
             </div>
         </div>  
