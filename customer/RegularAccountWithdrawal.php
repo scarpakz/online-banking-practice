@@ -11,7 +11,7 @@
         <button class="m-lg text-white">< Back</button>
 
     <div class="format-container">
-        <form action="../controllers/DepositAmount.php">
+        <form action="../controllers/DepositAmount.php" method="post">
             <div>
                 <h1 id="font-sizing">
                     Regular Account Withdrawal
