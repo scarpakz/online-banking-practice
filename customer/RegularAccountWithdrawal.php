@@ -19,7 +19,7 @@
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500"
     >
-        <form action="../controllers/DepositAmount.php">
+        <form action="../controllers/DepositAmount.php" method="post">
             <div>
                 <h1 id="font-sizing">
                     Regular Account Withdrawal

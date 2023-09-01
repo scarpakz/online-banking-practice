@@ -1,5 +1,8 @@
 <?php include "../constant/header.php"; ?>
-
+<?php
+    $sql = "SELECT * FROM `account`";
+    $excute = mysqli_query($db,$sql);
+?>
     <div class="view-balance-container">
         <div class="view-balance-header"
             data-aos="fade-right"
@@ -13,19 +16,21 @@
             </div>
         </div>
         <button class="m-lg text-white">< Back</button>
-        <div class="balances" 
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500"
+        <div class="balances"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1500"
         >
-            <div class="regular-balance">
-                <span>Regular Balance:</span>
-                <span class="balance">P 100.00</span>
-            </div>
-            <div class="cheque-balance">
-                <span>Cheque Balance:</span>
-                <span class="balance">P 950,000.00</span>
-            </div>
+            <?php if($data = mysqli_fetch_array($excute)) {?>
+                <div class="regular-balance">
+                    <span>Regular Balance:</span>
+                    <span class="balance"><?php echo $data['regular_balance']; ?></span>
+                </div>
+                <div class="cheque-balance">
+                    <span>Cheque Balance:</span>
+                    <span class="balance"><?php echo $data['cheque_balance'] ?></span>
+                </div>
+            <?php }?>
         </div>
     </div>
 
