@@ -19,5 +19,10 @@
         $usql = "UPDATE `account` SET `regular_balance`='$new_amount' WHERE user_id = '1'";
         $uresult = mysqli_query($db,$usql);
         
+        if($uresult){
+            header('location: ../customer/ViewBalance.php');
+        }else{
+            echo "error";
+        }
 }
 ?>
