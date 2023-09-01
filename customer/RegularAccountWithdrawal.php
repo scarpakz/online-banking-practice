@@ -26,7 +26,7 @@
                 </h1>
             </div>
             <div>
-                <input type="text" name="dep_amnt" id="input-type" placeholder="Enter amount">
+                <input type="number" min="0" name="dep_amnt" id="input-type" placeholder="Enter amount">
             </div>
             <div>
                 <input type="submit" name="sbmt-dep-amnt" value="submit" id="submitted-btn">
