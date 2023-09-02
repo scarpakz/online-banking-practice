@@ -22,10 +22,12 @@ if (isset($_POST['submit'])) {
                 $_SESSION['user_name'] = $user_name;
             }
         } else { // if not equal username and password
-            header("location: ../login.php");
+            header("location: ../login.php?login=false");
         }
     } else { // if no results found
-        header("location: ../login.php");
+        header("location: ../login.php?login=false");
     }
+} else {
+    header("location: ../login.php");
 }
 ?>

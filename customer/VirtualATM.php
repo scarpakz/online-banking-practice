@@ -1,7 +1,18 @@
 <?php include "../constant/header.php"?>
 <?php
-    $psql = "SELECT * FROM user";
+    $user_name = $_SESSION['user_name'];
+    $psql = "SELECT * FROM user WHERE user_name = '$user_name'";
     $pexcute = mysqli_query($db,$psql);
+
+    $first_name = "";
+    $last_name = "";
+    $birth_date = "";
+
+    $data = mysqli_fetch_array($pexcute);
+
+    $first_name = $data['first_name'];
+    $last_name = $data['last_name'];
+    $birth_date = $data['birth_date'];
 ?>
     <div class="virtual-header-container">   
         <div class="virtual-displaying-set"
@@ -16,7 +27,7 @@
             <?php if($chge_data = mysqli_fetch_array($pexcute)){ ?>
                 <a href="../customer/ChangePIN.php?chnge_pin=<?php echo $chge_data['id']; ?>" id="link-btn">Change PIN</a>
             <?php }?>
-                <a href="" id="link-btn">Sign Out</a>
+                <a href="../logout.php" id="link-btn">Sign Out</a>
             </div>
         </div>  
         
@@ -39,11 +50,11 @@
                     <?php   }?>
                     <div class="lining-height">
                         <div class="div-box">
-                            <h3>JASON, JAVIER</h3>
+                            <h3><?php echo $first_name . " " . $last_name; ?></h3>
                             <h3>Date Validity</h3>
                         </div>
                         <div class="div-validity">
-                            <h3>09/10/1996</h3>
+                            <h3><?php echo $birth_date; ?></h3>
                             <h3>09/2028</h3>
                         </div>
                     </div>        

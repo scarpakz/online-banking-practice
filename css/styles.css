@@ -8,7 +8,18 @@ body {
 }
 
 /* LOGIN PAGE */
-
+.alert-danger {
+    background-color: #ffb0b0;
+    border-radius: 5px;
+    border: solid 1px #d30000;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 40px;
+    color: #b51414;
+    font-weight: 600;
+}
 .login-container {
     display: flex;
     justify-content: center;

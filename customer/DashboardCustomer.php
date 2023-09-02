@@ -31,7 +31,7 @@
                     <a href="">Deposit Cash</a>
                 </div>
                 <div class="select-btn">
-                    <a href="">View My Card</a>
+                    <a href="VirtualATM.php">View My Card</a>
                 </div>
             </div>
         </div>
