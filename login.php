@@ -17,7 +17,7 @@
             <div class="login-content">
                 <h1>Sign In</h1>
                 <div class="login-form">
-                    <form action="employee/AddCustomer.php" method="post">
+                    <form action="controllers/PostLogin.php" method="post">
                         <div class="login-group">
                             <input type="text" name="username" placeholder="Enter Username" required/>
                         </div>

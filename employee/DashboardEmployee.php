@@ -7,7 +7,7 @@
             data-aos-easing="ease-in-sine"
         >
             <h1 class="fl-1">Welcome, admin123!</h1>
-            <a href="" class="fl-1">Sign Out</a>
+            <a href="../logout.php" class="fl-1">Sign Out</a>
         </div>
         <div class="employee-dash-first-container">
             <div class="add-cust-select" data-aos="zoom-in-right">
