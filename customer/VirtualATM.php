@@ -4,10 +4,6 @@
     $psql = "SELECT * FROM user WHERE user_name = '$user_name'";
     $pexcute = mysqli_query($db,$psql);
 
-    $first_name = "";
-    $last_name = "";
-    $birth_date = "";
-
     $data = mysqli_fetch_array($pexcute);
 
     $first_name = $data['first_name'];
