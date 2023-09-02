@@ -1,6 +1,7 @@
 <?php 
     include "../database/db.php";
     session_start(); 
+    if (isset($_SESSION['user_name'])) {
 ?>
 
 <!DOCTYPE html>
@@ -14,3 +15,8 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
+<?php 
+    } else {
+        header("location: ../login.php");
+    }
+?>
