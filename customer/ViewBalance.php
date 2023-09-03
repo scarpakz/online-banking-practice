@@ -18,7 +18,7 @@
             <?php if($chge_data = mysqli_fetch_array($pexcute)){ ?>
                 <a href="../customer/ChangePIN.php?chnge_pin=<?php echo $chge_data['id']; ?>" class="chnge-pin">Change PIN</a>
             <?php }?>
-                <a href="">Sign Out</a>
+                <a href="../logout.php">Sign Out</a>
             </div>
         </div>
         <button class="m-lg text-white">< Back</button>
