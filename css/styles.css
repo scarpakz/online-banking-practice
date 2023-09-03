@@ -436,6 +436,32 @@ Cheque Withdrawal
     font-weight: 600;
 }
 
+/* Add User Confirmation */
+.confirmation-check{
+    text-align: center;
+    margin-top: 40vh;
+    line-height: 10vh;
+}
+#confirmation-text{
+    color: #fff;
+    font-size: 5vh;
+    background-color: ;
+    border: none;
+}
+#submit-confirmation{
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+}
+#submit-confirmation:hover{
+    background-color: #82f429;
+    color: #fff;
+}
+
 /* FOOTER */
 
 footer {
@@ -447,3 +473,4 @@ footer {
     color: #cbcbcb;
     background-color: #222;
 }
+
