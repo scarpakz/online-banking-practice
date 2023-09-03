@@ -8,7 +8,18 @@ body {
 }
 
 /* LOGIN PAGE */
-
+.alert-danger {
+    background-color: #ffb0b0;
+    border-radius: 5px;
+    border: solid 1px #d30000;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 40px;
+    color: #b51414;
+    font-weight: 600;
+}
 .login-container {
     display: flex;
     justify-content: center;
@@ -107,7 +118,7 @@ body {
     color: #fff;
 }
 #PIN_ID {
-    color: #fff;
+    color: #000;
 }
 
 /* Employee Dashboard */
@@ -424,6 +435,7 @@ Cheque Withdrawal
     flex: 1;
     font-weight: 600;
 }
+
 /* Add User Confirmation */
 .confirmation-check{
     text-align: center;
@@ -448,5 +460,17 @@ Cheque Withdrawal
 #submit-confirmation:hover{
     background-color: #82f429;
     color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    color: #cbcbcb;
+    background-color: #222;
 }
 

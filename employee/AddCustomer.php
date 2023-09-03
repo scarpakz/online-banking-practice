@@ -1,6 +1,10 @@
 <?php include "../constant/header.php"; ?>
 
-<div class="add-cust-container">
+<div class="add-cust-container"
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+>
     <div class="add-cust-header">
         <h1 class="fl-1">Add Customer</h1>
         <a class="fl-1" href="../logout.php"> Sign Out</a>
