@@ -22,7 +22,7 @@
             <h1 data-aos="fade-up" data-aos-duration="1000">What do you want to do today?</h1>
             <div class="cust-dash-content" data-aos="fade-up" data-aos-delay="1000">
                 <div class="select-btn">
-                    <a href="">View Balance</a>
+                    <a href="ViewBalance.php">View Balance</a>
                 </div>
                 <div class="select-btn">
                     <a href="">Withdraw</a>

@@ -17,9 +17,11 @@ if (isset($_POST['submit'])) {
             if ($role == 'customer') {
                 header("location: ../customer/DashboardCustomer.php");
                 $_SESSION['user_name'] = $user_name;
+                $_SESSION['role'] = $role;
             } else { // Employee
                 header("location: ../employee/DashboardEmployee.php");
                 $_SESSION['user_name'] = $user_name;
+                $_SESSION['role'] = $role;
             }
         } else { // if not equal username and password
             header("location: ../login.php?login=false");
