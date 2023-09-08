@@ -20,7 +20,7 @@
                     <?php if (isset($_GET['login'])) { ?>
                         <div class="alert-danger">Error! Incorrect credentials.</div>
                     <?php }?>
-                    <form action="controllers/PostLogin.php" method="post">
+                    <form action="controllers/PostLogin.php?" method="post">
                         <div class="login-group">
                             <input type="text" name="username" placeholder="Enter Username" required/>
                         </div>

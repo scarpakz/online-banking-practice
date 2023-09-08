@@ -17,7 +17,9 @@
                 <a href="" class="sign-out">Sign Out</a>
             </div>
         </div>
-        <button class="m-lg text-white">< Back</button>
+        <div class="back-btn">
+            <a href="../customer/DashboardCustomer.php" class="m-lg text-white">< Back</a>
+        </div>
 
     <div class="format-container"
     data-aos="flip-left"
@@ -31,10 +33,10 @@
                 </h1>
             </div>
             <div>
-                <input type="number" min="0" name="dep_amnt" id="input-type" placeholder="Enter amount">
+                <input type="number" min="0" name="" id="input-type" placeholder="Enter amount">
             </div>
             <div>
-                <input type="submit" name="sbmt-dep-amnt" value="submit" id="submitted-btn">
+                <input type="submit" name="" value="submit" id="submitted-btn">
             </div>    
         </form>
     </div>
