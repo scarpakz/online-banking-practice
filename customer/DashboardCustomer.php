@@ -17,7 +17,6 @@
                 <a href="../logout.php" class="sign-out">Sign Out</a>
             </div>
         </div>
-        <button class="m-lg text-white">< Back</button>
         <div class="cust-dash-first-container">
             <h1 data-aos="fade-up" data-aos-duration="1000">What do you want to do today?</h1>
             <div class="cust-dash-content" data-aos="fade-up" data-aos-delay="1000">
@@ -25,10 +24,10 @@
                     <a href="ViewBalance.php">View Balance</a>
                 </div>
                 <div class="select-btn">
-                    <a href="">Withdraw</a>
+                    <a href="RegularAccountWithdrawal.php">Withdraw</a>
                 </div>
                 <div class="select-btn">
-                    <a href="">Deposit Cash</a>
+                    <a href="DepositMenu.php">Deposit</a>
                 </div>
                 <div class="select-btn">
                     <a href="VirtualATM.php">View My Card</a>

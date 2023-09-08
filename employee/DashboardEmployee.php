@@ -11,10 +11,10 @@
         </div>
         <div class="employee-dash-first-container">
             <div class="add-cust-select" data-aos="zoom-in-right">
-                <a href="">Add Customer</a>
+                <a href="../employee/AddCustomer.php">Add Customer</a>
             </div>
             <div class="view-cust-select" data-aos="zoom-in-left">
-                <a href="">View Customers</a>
+                <a href="../employee/ViewCustomers.php">View Customers</a>
             </div>
         </div>
     </div>

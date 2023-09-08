@@ -13,7 +13,7 @@
         <a class="fl-1" href="../logout.php"> Sign Out</a>
     </div>
     <div class="back-btn">
-        <a href="DashboardEmployee.php" class="m-lg text-white">< Back</a>
+        <a href="../employee/DashboardEmployee.php" class="m-lg text-white">< Back</a>
     </div>
     <div class="view-cust-display-container"
     data-aos="flip-left"

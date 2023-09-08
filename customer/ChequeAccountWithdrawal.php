@@ -14,10 +14,12 @@
             <?php if($chge_data = mysqli_fetch_array($pexcute)){ ?>
                 <a href="../customer/ChangePIN.php?chnge_pin=<?php echo $chge_data['id']; ?>" class="chnge-pin">Change PIN</a>
             <?php }?>
-                <a href="" class="sign-out">Sign Out</a>
+                <a href="../logout.php" class="sign-out">Sign Out</a>
             </div>
         </div>
-        <button class="m-lg text-white">< Back</button>
+        <div class="back-btn">
+            <a href="../customer/DashboardCustomer.php" class="m-lg text-white">< Back</a>
+        </div>
 
     <div class="format-container"
     data-aos="flip-left"

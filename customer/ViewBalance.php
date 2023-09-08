@@ -21,7 +21,9 @@
                 <a href="../logout.php">Sign Out</a>
             </div>
         </div>
-        <button class="m-lg text-white">< Back</button>
+        <div class="back-btn">
+            <a href="../customer/DashboardCustomer.php" class="m-lg text-white">< Back</a>
+        </div>
         <div class="balances"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"

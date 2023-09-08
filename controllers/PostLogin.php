@@ -12,16 +12,19 @@ if (isset($_POST['submit'])) {
     if ($executeSelect) {
         $userDBCredentials = mysqli_fetch_array($executeSelect);
         $role = $userDBCredentials['role'];
+        $id = $userDBCredentials['id'];
         
         if ($userDBCredentials['user_name'] == $user_name && $userDBCredentials['password'] == $password) {
             if ($role == 'customer') {
                 header("location: ../customer/DashboardCustomer.php");
                 $_SESSION['user_name'] = $user_name;
                 $_SESSION['role'] = $role;
+                $_SESSION['id'] = $id;
             } else { // Employee
                 header("location: ../employee/DashboardEmployee.php");
                 $_SESSION['user_name'] = $user_name;
                 $_SESSION['role'] = $role;
+                $_SESSION['id'] = $id;
             }
         } else { // if not equal username and password
             header("location: ../login.php?login=false");

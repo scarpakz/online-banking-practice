@@ -26,8 +26,9 @@
                 <a href="../logout.php" id="link-btn">Sign Out</a>
             </div>
         </div>  
-        
-        <button class="m-lg text-white">< Back</button>
+        <div class="back-btn">
+            <a href="../customer/DashboardCustomer.php" class="m-lg text-white">< Back</a>
+        </div>
         <div>
             <h1 class="text-atm" data-aos="fade-up">My Virtual ATM card</h1>
         </div>
