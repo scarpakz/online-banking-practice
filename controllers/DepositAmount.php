@@ -16,7 +16,7 @@
         if($balance = 0){
             echo "Your Balance Is Empty";
         }else{
-            echo $new_amount;
+            echo "Not enough";
         }
         
         $usql = "UPDATE `account` SET `regular_balance`='$new_amount' WHERE user_id = '$id'";

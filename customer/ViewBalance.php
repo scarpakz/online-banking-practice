@@ -3,6 +3,9 @@
     $sql = "SELECT * FROM `account`";
     $excute = mysqli_query($db,$sql);
 
+    $sqli = "SELECT * FROM `account`";
+    $set = mysqli_query($db,$sqli);
+
     $psql = "SELECT * FROM user";
     $pexcute = mysqli_query($db,$psql);
 
@@ -34,11 +37,13 @@
                     <span>Regular Balance:</span>
                     <span class="balance"><?php echo $data['regular_balance']; ?></span>
                 </div>
+                <?php }?>
+                <?php if($input = mysqli_fetch_array($set)){?>
                 <div class="cheque-balance">
                     <span>Cheque Balance:</span>
                     <span class="balance"><?php echo $data['cheque_balance'] ?></span>
                 </div>
-            <?php }?>
+                <?php }?>
         </div>
     </div>
 

@@ -24,7 +24,7 @@
                     <a href="ViewBalance.php">View Balance</a>
                 </div>
                 <div class="select-btn">
-                    <a href="RegularAccountWithdrawal.php">Withdraw</a>
+                    <a href="WithdrawMenu.php">Withdraw</a>
                 </div>
                 <div class="select-btn">
                     <a href="DepositMenu.php">Deposit</a>
