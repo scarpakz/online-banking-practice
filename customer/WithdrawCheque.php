@@ -27,7 +27,7 @@
         <form action="../controllers/ChequeWithdraw.php" method="post">
             <div>
                 <h1 id="font-sizing">
-                    Cheque Withdrawal
+                    Withdraw Cheque
                 </h1>
             </div>
             <div>
