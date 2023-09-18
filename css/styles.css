@@ -8,7 +8,18 @@ body {
 }
 
 /* LOGIN PAGE */
-
+.alert-danger {
+    background-color: #ffb0b0;
+    border-radius: 5px;
+    border: solid 1px #d30000;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 40px;
+    color: #b51414;
+    font-weight: 600;
+}
 .login-container {
     display: flex;
     justify-content: center;
@@ -68,10 +79,11 @@ body {
 .fl-1:last-child {
     justify-content: end;
 }
-.m-lg {
-    margin: 40px 0;
+.back-btn{
+    margin-top: 45px;
 }
 .text-white {
+    text-decoration: none;
     color: #fff;
     border: unset;
     background-color: #E23B3B;
@@ -79,6 +91,9 @@ body {
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+.add-cust-form{
+    margin-top: 30px;
 }
 .add-cust-form-group {
     width: 350px;
@@ -107,7 +122,7 @@ body {
     color: #fff;
 }
 #PIN_ID {
-    color: #fff;
+    color: #000;
 }
 
 /* Employee Dashboard */
@@ -191,7 +206,15 @@ body {
 
 .cust-dash-container{
     color: #fff;
-    padding: 40px 60px;
+    padding: 40px 60px; 
+}
+.success-chge-pin-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.success-chge-pin-container h1{
+    font-size: 60px;
 }
 .cust-dash-header{
     display: flex;
@@ -200,6 +223,9 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 2em;
+}
+.cust-dash-first-container{
+    margin-top: 70px;
 }
 .cust-dash-first-container h1{
     text-align: center;
@@ -221,6 +247,9 @@ body {
 .select-btn a{
     text-decoration: none;
     color: #fff;
+}
+.chge-pin-form{
+    margin-top: 20px;
 }
 
 /* Virtual Amount */
@@ -307,6 +336,8 @@ Cheque Withdrawal
     padding: 10px 20px;
     text-transform: capitalize;
     border-radius: 10px ;
+    font-weight: 600;
+    border-style: none;
     background-color: rgb(130 244 41);
 }
 .font-lane-container{
@@ -424,3 +455,42 @@ Cheque Withdrawal
     flex: 1;
     font-weight: 600;
 }
+
+/* Add User Confirmation */
+.confirmation-check{
+    text-align: center;
+    margin-top: 40vh;
+    line-height: 10vh;
+}
+#confirmation-text{
+    color: #fff;
+    font-size: 5vh;
+    background-color: ;
+    border: none;
+}
+#submit-confirmation{
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+}
+#submit-confirmation:hover{
+    background-color: #82f429;
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    color: #cbcbcb;
+    background-color: #222;
+}
+

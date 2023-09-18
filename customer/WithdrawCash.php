@@ -14,29 +14,27 @@
             <?php if($chge_data = mysqli_fetch_array($pexcute)){ ?>
                 <a href="../customer/ChangePIN.php?chnge_pin=<?php echo $chge_data['id']; ?>" class="chnge-pin">Change PIN</a>
             <?php }?>
-                <a href="../logout.php" class="sign-out">Sign Out</a>
+                <a href="DashboardCustomer.php" class="sign-out">Sign Out</a>
             </div>
         </div>
-        <div class="back-btn">
-            <a href="../customer/DashboardCustomer.php" class="m-lg text-white">< Back</a>
-        </div>
+        <button class="m-lg text-white">< Back</button>
 
     <div class="format-container"
     data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500"
     >
-        <form action="">
+    <form action="../controllers/AccountWithdrawal.php" method="post">
             <div>
                 <h1 id="font-sizing">
-                    Cheque Account Withdrawal
+                    Cash Withdrawal
                 </h1>
             </div>
             <div>
-                <input type="text" name="" id="input-type" placeholder="Enter amount">
+                <input type="text" name="passage" id="input-type" placeholder="Enter amount">
             </div>
             <div>
-                <input type="submit" value="submit" id="submitted-btn">
+                <input type="submit" value="submit" name="submit" id="submitted-btn">
             </div>    
         </form>
     </div>

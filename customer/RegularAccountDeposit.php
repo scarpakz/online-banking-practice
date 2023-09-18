@@ -3,7 +3,7 @@
     $psql = "SELECT * FROM user";
     $pexcute = mysqli_query($db,$psql);
 ?>
-    <div class="cust-dash-container">
+<div class="cust-dash-container">
         <div class="cust-dash-header"
         data-aos="fade-right"
         data-aos-offset="300"
@@ -20,21 +20,26 @@
         <div class="back-btn">
             <a href="../customer/DashboardCustomer.php" class="m-lg text-white">< Back</a>
         </div>
-        <div class="deposit-cheq-container"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1500"
-        >
-            <h1>Deposit Cheque</h1>
-            <form action="../controllers/DepositChequeAmnt.php" method="post">
-                <div class="input-cheq-amount">
-                    <input type="text" name="cheque-amnt" placeholder="Enter amount">
-                </div>
-                <div class="deposit-cheq-btn">
-                    <button type="submit" name="sbmt-cheque-amnt">Submit</button>
-                </div>
-            </form>
-        </div>
+
+    <div class="format-container"
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1500"
+    >
+        <form action="../controllers/DepositAmount.php" method="post">
+            <div>
+                <h1 id="font-sizing">
+                    Regular Account Deposit
+                </h1>
+            </div>
+            <div>
+                <input type="number" min="0" name="dep_amnt" id="input-type" placeholder="Enter amount">
+            </div>
+            <div class="deposit-cheq-btn">
+                <button type="submit" name="sbmt-dep-amnt">Submit</button>
+            </div>    
+        </form>
     </div>
+</div>
 
 <?php include "../constant/footer.php"; ?>

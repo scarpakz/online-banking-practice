@@ -15,10 +15,10 @@
         data-aos-duration="1500"
         >
             <div class="cash-regular-select">
-                <a href="RegularAccountDeposit.php">Cash</a>
+                <a href="WithdrawCash.php">Cash</a>
             </div>
             <div class="cheque-regular-select">
-                <a href="DepositCheque.php">Cheque</a>
+                <a href="WithdrawCheque.php">Cheque</a>
             </div>
         </div>
     </div>
